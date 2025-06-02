@@ -1,5 +1,5 @@
 #!/bin/bash
-python -m venv .venv && \
+python3 -m venv .venv && \
 . .venv/bin/activate && \
 
 pip install flask-restful  && \
