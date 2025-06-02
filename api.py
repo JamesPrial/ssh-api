@@ -52,7 +52,9 @@ class Authorized_keys(Resource):
             return '', 404
         except PermissionError:
             return '', 403
-api.add_resource(Authorized_keys, '/<string:user>')
 
+
+
+api.add_resource(Authorized_keys, '/<string:user>')
 if __name__ == '__main__':
-    app.run(debug=True)
+    run()
