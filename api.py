@@ -53,8 +53,4 @@ class Authorized_keys(Resource):
         except PermissionError:
             return '', 403
 
-
-
 api.add_resource(Authorized_keys, '/<string:user>')
-if __name__ == '__main__':
-    run()
