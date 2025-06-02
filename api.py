@@ -26,7 +26,7 @@ class Authorized_keys(Resource):
             key = data['key']
             with open(f"/home/{str(user)}/.ssh/authorized_keys", 'a') as authkeys_file:
                 authkeys_file.write("\n%s\n" % key)
-                return '', 204
+            return '', 204
         except KeyError:
             return '', 400
         except FileNotFoundError:
